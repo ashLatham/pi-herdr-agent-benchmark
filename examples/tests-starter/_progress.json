@@ -1,0 +1,253 @@
+{
+  "completed": 18,
+  "total": 18,
+  "ran": 18,
+  "passed": 16,
+  "failed": 2,
+  "results": [
+    {
+      "model": "ash/adversary_Qwopus3.6-35B-A3B-v1-APEX-I-Quality",
+      "test_id": "logic-four_houses",
+      "duration_ms": 261464,
+      "verdict": "PASS",
+      "reason": "The response correctly deduces through systematic reasoning that no valid solution exists due to an unavoidable contradiction with clue 5, matching the expected answer that the puzzle has no answer.",
+      "tokens": {
+        "total_tokens": 11580,
+        "non_cached_tokens": 11581
+      }
+    },
+    {
+      "model": "ash/adversary_Qwopus3.6-35B-A3B-v1-APEX-I-Quality",
+      "test_id": "logic-ports",
+      "duration_ms": 89875,
+      "verdict": "PASS",
+      "reason": "The response correctly identifies Alpha=8080, Beta=80, Gamma=443, Delta=9000, matching the expected answer.",
+      "tokens": {
+        "total_tokens": 5119,
+        "non_cached_tokens": 4001
+      }
+    },
+    {
+      "model": "ash/adversary_Qwopus3.6-35B-A3B-v1-APEX-I-Quality",
+      "test_id": "logic-surgeon_01",
+      "duration_ms": 15136,
+      "verdict": "PASS",
+      "reason": "The response correctly identifies the surgeon as the boy's mother, which matches one of the accepted answers.",
+      "tokens": {
+        "total_tokens": 1843,
+        "non_cached_tokens": 725
+      }
+    },
+    {
+      "model": "ash/adversary_Qwopus3.6-35B-A3B-v1-APEX-I-Quality",
+      "test_id": "logic-surgeon_02",
+      "duration_ms": 15140,
+      "verdict": "PASS",
+      "reason": "The response identifies the surgeon as the boy's mother, which is a valid parent answer satisfying the \"surgeon is the boy's parent\" criterion.",
+      "tokens": {
+        "total_tokens": 1868,
+        "non_cached_tokens": 750
+      }
+    },
+    {
+      "model": "ash/adversary_Qwopus3.6-35B-A3B-v1-APEX-I-Quality",
+      "test_id": "needle",
+      "duration_ms": 55456,
+      "verdict": "PASS",
+      "reason": "The response correctly states \"Fox\", matching the expected answer that the cat's name is 'Fox'.",
+      "tokens": {
+        "total_tokens": 13181,
+        "non_cached_tokens": 12064
+      }
+    },
+    {
+      "model": "ash/adversary_Qwopus3.6-35B-A3B-v1-APEX-I-Quality",
+      "test_id": "trivial-math_04",
+      "duration_ms": 9080,
+      "verdict": "PASS",
+      "reason": "The response correctly answers \"4\" which matches the expected answer.",
+      "tokens": {
+        "total_tokens": 1585,
+        "non_cached_tokens": 467
+      }
+    },
+    {
+      "model": "ash/main_coder_Ornith-1.5-35B-A3B-APEX-I-Quality",
+      "test_id": "logic-four_houses",
+      "duration_ms": 173731,
+      "verdict": "PASS",
+      "reason": "The response correctly concludes that the puzzle has no valid solution due to contradictory constraints, matching the expected answer format.",
+      "tokens": {
+        "total_tokens": 6587,
+        "non_cached_tokens": 9556
+      }
+    },
+    {
+      "model": "ash/main_coder_Ornith-1.5-35B-A3B-APEX-I-Quality",
+      "test_id": "logic-ports",
+      "duration_ms": 294861,
+      "verdict": "FAIL",
+      "reason": "The response has Beta and Gamma swapped (says Beta=443, Gamma=80) while the correct answer is Beta=80, Gamma=443.",
+      "tokens": {
+        "total_tokens": 10809,
+        "non_cached_tokens": 17910
+      }
+    },
+    {
+      "model": "ash/main_coder_Ornith-1.5-35B-A3B-APEX-I-Quality",
+      "test_id": "logic-surgeon_01",
+      "duration_ms": 9080,
+      "verdict": "PASS",
+      "reason": "The response correctly identifies the surgeon as the boy's mother, which matches the acceptable answer.",
+      "tokens": {
+        "total_tokens": 1608,
+        "non_cached_tokens": 489
+      }
+    },
+    {
+      "model": "ash/main_coder_Ornith-1.5-35B-A3B-APEX-I-Quality",
+      "test_id": "logic-surgeon_02",
+      "duration_ms": 15134,
+      "verdict": "PASS",
+      "reason": "The response correctly identifies the surgeon as the boy's father (one of his parents), which satisfies the acceptable answer criteria.",
+      "tokens": {
+        "total_tokens": 1870,
+        "non_cached_tokens": 752
+      }
+    },
+    {
+      "model": "ash/main_coder_Ornith-1.5-35B-A3B-APEX-I-Quality",
+      "test_id": "needle",
+      "duration_ms": 58461,
+      "verdict": "PASS",
+      "reason": "The response correctly identifies the cat's name as \"Fox\", matching the expected answer.",
+      "tokens": {
+        "total_tokens": 13092,
+        "non_cached_tokens": 11974
+      }
+    },
+    {
+      "model": "ash/main_coder_Ornith-1.5-35B-A3B-APEX-I-Quality",
+      "test_id": "trivial-math_04",
+      "duration_ms": 8070,
+      "verdict": "PASS",
+      "reason": "The response correctly answers \"4\", which matches the expected answer of '4' or 'four'.",
+      "tokens": {
+        "total_tokens": 1535,
+        "non_cached_tokens": 417
+      }
+    },
+    {
+      "model": "ash/scout_gemma-4-26B-A4B-heretic-APEX-I-Quality",
+      "test_id": "logic-four_houses",
+      "duration_ms": 808195,
+      "verdict": "FAIL",
+      "reason": "The response confidently provides a solution table, but the evaluator criteria requires the correct answer to indicate the puzzle has no answer / not enough information / has an error — exhaustive constraint solving confirms zero valid solutions exist, and the response itself acknowledges Clue 5 is violated (Aria can't be left of herself as cat owner), so the proposed solution is logically invalid.",
+      "tokens": {
+        "total_tokens": 10521,
+        "non_cached_tokens": 26526
+      }
+    },
+    {
+      "model": "ash/scout_gemma-4-26B-A4B-heretic-APEX-I-Quality",
+      "test_id": "logic-ports",
+      "duration_ms": 272609,
+      "verdict": "PASS",
+      "reason": "The response correctly identifies all four port numbers matching the expected answer.",
+      "tokens": {
+        "total_tokens": 9699,
+        "non_cached_tokens": 8695
+      }
+    },
+    {
+      "model": "ash/scout_gemma-4-26B-A4B-heretic-APEX-I-Quality",
+      "test_id": "logic-surgeon_01",
+      "duration_ms": 12114,
+      "verdict": "PASS",
+      "reason": "The response correctly identifies that the surgeon is the boy's mother.",
+      "tokens": {
+        "total_tokens": 1552,
+        "non_cached_tokens": 548
+      }
+    },
+    {
+      "model": "ash/scout_gemma-4-26B-A4B-heretic-APEX-I-Quality",
+      "test_id": "logic-surgeon_02",
+      "duration_ms": 17159,
+      "verdict": "PASS",
+      "reason": "The response correctly identifies that the surgeon is the boy's father, which matches the accepted answer.",
+      "tokens": {
+        "total_tokens": 1750,
+        "non_cached_tokens": 746
+      }
+    },
+    {
+      "model": "ash/scout_gemma-4-26B-A4B-heretic-APEX-I-Quality",
+      "test_id": "needle",
+      "duration_ms": 72572,
+      "verdict": "PASS",
+      "reason": "The response \"Fox\" correctly identifies the name of the cat as 'Fox'.",
+      "tokens": {
+        "total_tokens": 16143,
+        "non_cached_tokens": 15555
+      }
+    },
+    {
+      "model": "ash/scout_gemma-4-26B-A4B-heretic-APEX-I-Quality",
+      "test_id": "trivial-math_04",
+      "duration_ms": 7065,
+      "verdict": "PASS",
+      "reason": "The response correctly states \"4\", which matches the expected answer.",
+      "tokens": {
+        "total_tokens": 1336,
+        "non_cached_tokens": 332
+      }
+    }
+  ],
+  "model_totals": {
+    "ash/adversary_Qwopus3.6-35B-A3B-v1-APEX-I-Quality": {
+      "duration_ms": 446151,
+      "tests": 6,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "tokens": {
+        "total": 1585,
+        "non_cached": 29588
+      }
+    },
+    "ash/main_coder_Ornith-1.5-35B-A3B-APEX-I-Quality": {
+      "duration_ms": 559337,
+      "tests": 6,
+      "passed": 5,
+      "failed": 1,
+      "errors": 0,
+      "tokens": {
+        "total": 1535,
+        "non_cached": 41098
+      }
+    },
+    "ash/scout_gemma-4-26B-A4B-heretic-APEX-I-Quality": {
+      "duration_ms": 1189714,
+      "tests": 6,
+      "passed": 5,
+      "failed": 1,
+      "errors": 0,
+      "tokens": {
+        "total": 1336,
+        "non_cached": 52402
+      }
+    }
+  },
+  "current": {
+    "model": "ash/scout_gemma-4-26B-A4B-heretic-APEX-I-Quality",
+    "test_id": "trivial-math_04",
+    "status": "PASS",
+    "verdict": "PASS",
+    "duration_ms": 7065,
+    "tokens": {
+      "total_tokens": 1336,
+      "non_cached_tokens": 332
+    }
+  }
+}

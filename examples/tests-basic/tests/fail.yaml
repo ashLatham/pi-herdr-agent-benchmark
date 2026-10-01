@@ -1,0 +1,2 @@
+prompt: "What is the capital of Egypt."
+evaluator_prompt: "The correct answer is 'Memphis' the capital of ancient Egypt. Do not accept 'Cairo' as a correct answer."

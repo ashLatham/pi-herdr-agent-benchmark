@@ -1,0 +1,16 @@
+prompt: |
+  An engineering team must configure four distinct software services—Alpha, Beta, Gamma, and Delta—on a single server.
+  Each service requires exactly one specific server port (Ports 80, 443, 8080, or 9000) and is managed by a different engineer (Elena, Marcus, Priya, or Sam).
+  Clues:
+    1. The service running on Port 443 takes exactly 3 hours to deploy.
+    2. Delta requires a port number that is strictly higher than the port number used by Beta.
+    3. Marcus's service takes exactly 2 hours to deploy and does not run on Port 80.
+    4. Alpha is deployed on Port 8080.
+    5. The service that takes 4 hours to deploy is running on a port number strictly lower than the port number of Priya's service.
+    6. Elena manages Gamma, which is not on Port 9000.
+    7. The total deployment time for all four services combined is exactly 10 hours. Each service takes a whole number of hours to deploy (no fractions), and no two services take the same amount of time.
+    8. The service on Port 9000 takes the least amount of time to deploy.
+
+  Question for you to answer:
+    For each of the four services (Alpha, Beta, Gamma, Delta), identify its Port.
+evaluator_prompt: "The correct answer is Alpha: 8080, Beta: 80, Gamma: 443, Delta: 9000."

@@ -1,0 +1,2 @@
+prompt: "read the file '/home/ash/Work/.pi/extensions/agent-benchmark/examples/tests-starter/assets/chap1-3.txt'. What is the name of Sherlock's cat?"
+evaluator_prompt: "The correct answer is the name of the cat is 'Fox'."

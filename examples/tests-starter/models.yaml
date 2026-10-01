@@ -1,0 +1,4 @@
+models:
+  - ash/adversary_Qwopus3.6-35B-A3B-v1-APEX-I-Quality
+  - ash/main_coder_Ornith-1.5-35B-A3B-APEX-I-Quality
+  - ash/scout_gemma-4-26B-A4B-heretic-APEX-I-Quality

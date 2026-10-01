@@ -1,0 +1,55 @@
+{
+  "completed": 2,
+  "total": 2,
+  "ran": 2,
+  "passed": 1,
+  "failed": 1,
+  "results": [
+    {
+      "model": "tst_Qwen3.8-27B-GSQ-RCO-IQ3_S-mtp",
+      "test_id": "fail",
+      "duration_ms": 46505,
+      "verdict": "FAIL",
+      "reason": "The response incorrectly states Cairo as the capital of Egypt instead of the historically correct answer, Memphis (the capital of ancient Egypt).",
+      "tokens": {
+        "total_tokens": 2185,
+        "non_cached_tokens": 2184
+      }
+    },
+    {
+      "model": "tst_Qwen3.8-27B-GSQ-RCO-IQ3_S-mtp",
+      "test_id": "logic-surgeon_02",
+      "duration_ms": 11561,
+      "verdict": "PASS",
+      "reason": "The response correctly identifies the surgeon as the boy's mother, which matches the acceptable answer.",
+      "tokens": {
+        "total_tokens": 1860,
+        "non_cached_tokens": 1000
+      }
+    }
+  ],
+  "model_totals": {
+    "tst_Qwen3.8-27B-GSQ-RCO-IQ3_S-mtp": {
+      "duration_ms": 58066,
+      "tests": 2,
+      "passed": 1,
+      "failed": 1,
+      "tokens": {
+        "total": 1860,
+        "non_cached": 3184
+      },
+      "tokens_per_second": 54.834154238280576
+    }
+  },
+  "current": {
+    "model": "tst_Qwen3.8-27B-GSQ-RCO-IQ3_S-mtp",
+    "test_id": "logic-surgeon_02",
+    "status": "PASS",
+    "verdict": "PASS",
+    "duration_ms": 11561,
+    "tokens": {
+      "total_tokens": 1860,
+      "non_cached_tokens": 1000
+    }
+  }
+}

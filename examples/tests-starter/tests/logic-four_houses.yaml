@@ -1,0 +1,18 @@
+prompt: |
+  Four suspects—Aria, Bram, Corey, and Dana—live in a row of four distinct houses (numbered 1 to 4 from left to right).
+  Each person has a different profession, owns a different pet, and wears a different colored hat.
+  Clues:
+    1. The Baker lives in House 1.
+    2. The person wearing the red hat lives directly next to the owner of the ferret.
+    3. Corey lives in House 4.
+    4. The Painter owns an iguana and wears a blue hat.
+    5. Aria lives somewhere to the left of the person who owns the cat.
+    6. The person in House 2 wears a green hat.
+    7. Bram is the Chef.
+    8. The Gardener lives directly next to the house with the ferret.
+    9. The person wearing the yellow hat lives in House 3.
+    10. Dana owns a dog.
+    11. The Chef does not live in House 1 or House 4.
+  Question for you to answer:
+    Who lives in each house (1 through 4), and what are their respective professions, pets, and hat colors? Give your answer and a summary of the reasoning that led to this answer. IF you are unable to correctly provide an answer, then say so and explain why.
+evaluator_prompt: "The correct answer should be something like; there is no answer, or not enough information for an answer or I can't find an answer or the puzzle has an error."

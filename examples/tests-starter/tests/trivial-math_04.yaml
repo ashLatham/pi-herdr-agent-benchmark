@@ -1,0 +1,2 @@
+prompt: "What is 2+2? Answer with only the single digit."
+evaluator_prompt: "The correct answer is '4' or 'four'"
